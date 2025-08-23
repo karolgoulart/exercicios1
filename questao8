@@ -1,0 +1,38 @@
+#linguagemC
+
+#include <stdio.h>
+
+void main (){
+    int n1;
+    int n2;
+    int i;
+
+    printf("Insira um número: ");
+    scanf("%d", &n1);
+    printf("Insira outro número: ");
+    scanf("%d", &n2);
+
+
+    if (n1<n2){
+        for (i=n1; i<=n2; i++){
+            printf("%d \n", i);
+        }
+    }
+    else{
+        for (i=n2; i<=n1; i++){
+            printf("%d \n", i);
+        }
+    }
+}
+
+#Python
+
+n1= int(input("Insira um número: "))
+n2= int(input("Insira outro número: "))
+
+if n1<n2:
+    for i in range(n1, n2+1):
+        print (i)
+else: 
+    for i in range(n2, n1+1):
+        print (i)
